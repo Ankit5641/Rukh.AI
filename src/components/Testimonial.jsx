@@ -1,28 +1,32 @@
 const Testimonial = () => {
     const cardsData = [
         {
-            image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200',
-            name: 'Briar Martin',
-            handle: '@neilstellar',
-            date: 'April 20, 2025'
+            image: 'src/assets/aditya.png',
+            name: 'Aditya Raj',
+            handle: '@R_aditya',
+            date: 'April 20, 2025',
+            comment: 'This platform helped me boost my workflow and save tons of time!'
         },
         {
-            image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200',
-            name: 'Avery Johnson',
-            handle: '@averywrites',
-            date: 'May 10, 2025'
+            image: 'src/assets/aman.png',
+            name: 'Aman Singh',
+            handle: '@Aparasar',
+            date: 'May 10, 2025',
+            comment: 'Super easy to use, and the results are just amazing.'
         },
         {
-            image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&auto=format&fit=crop&q=60',
-            name: 'Jordan Lee',
-            handle: '@jordantalks',
-            date: 'June 5, 2025'
+            image: 'src/assets/rukku.png',
+            name: 'Rukakshi',
+            handle: '@rukku',
+            date: 'June 5, 2025',
+            comment: 'I love how smooth everything feels—this tool is a game-changer.'
         },
         {
-            image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&auto=format&fit=crop&q=60',
-            name: 'Avery Johnson',
-            handle: '@averywrites',
-            date: 'May 10, 2025'
+            image: 'src/assets/ankit.png',
+            name: 'Ankit singh',
+            handle: '@R_ankit',
+            date: 'May 10, 2025',
+            comment: 'Great experience! Definitely recommend it to everyone.'
         },
     ];
 
@@ -40,8 +44,9 @@ const Testimonial = () => {
                     <span className="text-xs text-slate-500">{card.handle}</span>
                 </div>
             </div>
-            <p className="text-sm py-4 text-gray-800">Radiant made undercutting all of our competitors an absolute
-                breeze.</p>
+            <p className="text-sm py-4 text-gray-800">
+                        {card.comment}
+            </p>
             <div className="flex items-center justify-between text-slate-500 text-xs">
                 <div className="flex items-center gap-1">
                     <span>Posted on</span>

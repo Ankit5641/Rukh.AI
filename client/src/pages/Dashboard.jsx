@@ -87,4 +87,17 @@ const Dashboard = () => {
   )
 }
 
+{
+  creations.map((item) => (
+    <CreationItem
+      key={item.id}
+      item={item}
+      onDelete={(deletedId) =>
+        setCreations(creations.filter((c) => c.id !== deletedId))
+      }
+    />
+  ))
+}
+
+
 export default Dashboard

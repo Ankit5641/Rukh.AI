@@ -31,7 +31,7 @@ export const generateArticle = async (req, res) => {
     }
 
     // ✅ Gemini model usage
-    const content = await generateWithGemini("gemini-1.5-flash", prompt, length);
+    const content = await generateWithGemini("gemini-2.5-flash", prompt, length);
 
     await sql`INSERT INTO creations (user_id, prompt, content, type) 
               VALUES (${userId}, ${prompt}, ${content}, 'article')`;
@@ -66,7 +66,7 @@ export const generateBlogTitle = async (req, res) => {
     }
 
     // ✅ Gemini model usage
-    const content = await generateWithGemini("gemini-1.5-flash", prompt, 100);
+    const content = await generateWithGemini("gemini-2.5-flash", prompt, 100);
 
     await sql`INSERT INTO creations (user_id, prompt, content, type) 
               VALUES (${userId}, ${prompt}, ${content}, 'blog-title')`;
